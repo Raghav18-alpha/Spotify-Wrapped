@@ -1,0 +1,10 @@
+erDiagram
+ USERS ||--o{ LISTENING_HISTORY : listens
+ SONGS ||--o{ LISTENING_HISTORY : played
+ ARTISTS ||--o{ ALBUMS : credits
+ ALBUMS ||--o{ SONGS : contains
+ GENRES ||--o{ SONGS : classifies
+ SONGS ||--o{ SONG_ARTIST : credits
+ ARTISTS ||--o{ SONG_ARTIST : performs
+ ALBUMS ||--o{ TRACK_NUMBER : contains
+ USERS ||--o{ WRAPPED_SUMMARY : receives
